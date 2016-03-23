@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/tw_privacy_and_safety_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <Preference android:title="@string/tw_location_title" android:key="location" android:fragment="com.android.settings.location.LocationSettings" />
+    <Preference android:title="@string/schedule_power_on_off_settings_title" android:key="power_setting">
+        <intent android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING" />
+    </Preference>
+</PreferenceScreen>

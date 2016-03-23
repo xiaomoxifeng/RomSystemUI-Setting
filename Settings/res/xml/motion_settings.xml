@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    android:title="@string/motion_title" 
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory android:persistent="false" android:title="@string/air_motion_title" android:key="category_gesture_activation" >    
+    <CheckBoxPreference 
+        android:persistent="false" 
+        android:title="@string/gesture_activation"
+        android:key="gesture_activation" />
+
+    <com.android.settings.SwitchPreferenceScreen 
+        android:title="@string/air_turn_title" 
+        android:key="air_turn_accept" 
+        android:summary="@string/air_turn_descption" 
+        android:dependency="gesture_activation" 
+        />   
+
+    <com.android.settings.SwitchPreferenceScreen 
+        android:title="@string/air_launcher_accept" 
+        android:key="air_launcher_accept" 
+        android:summary="@string/air_launcher_accept_descption" 
+        android:dependency="gesture_activation" 
+        />   
+
+    <com.android.settings.SwitchPreferenceScreen 
+        android:title="@string/air_call_accept" 
+        android:key="air_call_accept" 
+        android:summary="@string/air_call_accept_descption" 
+        android:dependency="gesture_activation" 
+        />
+
+    <com.android.settings.SwitchPreferenceScreen 
+        android:title="@string/air_turn_internet_window_title" 
+        android:key="air_browser_accept" 
+        android:summary="@string/motion2014_air_browse_internet_summary" 
+        android:dependency="gesture_activation" 
+        />        
+</PreferenceCategory>
+
+</PreferenceScreen>

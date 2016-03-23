@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dashboard-categories
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <dashboard-category android:id="@+id/tw_quick_setting" android:title="@string/tw_ic_quick_setting">
+        <dashboard-tile android:icon="@drawable/tw_ic_quick_setting_grid_datausage" android:id="@+id/data_usage_settings" android:title="@string/data_usage_summary_title" android:fragment="com.android.settings.DataUsageSummary" />
+        <dashboard-tile android:icon="@drawable/tw_ic_quick_setting_grid_sound" android:id="@+id/notification_settings" android:title="@string/notification_settings" android:fragment="com.mediatek.audioprofile.AudioProfileSettings" />
+        <dashboard-tile android:icon="@drawable/tw_ic_quick_setting_grid_display" android:id="@+id/display_settings" android:title="@string/display_settings" android:fragment="com.android.settings.DisplaySettings" />
+        <dashboard-tile android:icon="@drawable/tw_ic_quick_setting_grid_wallpaper" android:id="@+id/wallpaper_settings" android:title="@string/tw_settings_category_wallpaper">
+            <intent android:targetPackage="com.sec.android.app.wallpapers" android:targetClass="com.sec.android.app.wallpapers.WallpaperPickerActivity" />
+        </dashboard-tile>
+        <dashboard-tile android:icon="@drawable/tw_ic_quick_setting_grid_lockscreen" android:id="@+id/security_settings" android:title="@string/tw_lockscreen_security_settings_title" android:fragment="com.android.settings.SecuritySettings" />
+        <dashboard-tile android:icon="@drawable/tw_ic_quick_setting_grid_help" android:id="@+id/help_settings" android:title="@string/tw_settings_category_help" />
+    </dashboard-category>
+</dashboard-categories>

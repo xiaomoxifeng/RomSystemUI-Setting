@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:gravity="center_vertical" 
+	android:orientation="horizontal" 
+	android:id="@+id/tw_sfinder_content" 
+	android:background="@drawable/tw_sfinder_connect_background" 
+	android:layout_width="fill_parent" 
+	android:layout_height="@dimen/tw_sfinder_connect_panel_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.TwCenterTextView 
+    	android:textSize="@dimen/tw_quick_connect_sfinder_size" 
+    	android:textColor="@android:color/white" 
+    	android:gravity="center" 
+    	android:id="@+id/tw_sfinder_view" 
+    	android:background="?android:selectableItemBackground" 
+    	android:layout_width="0.0dip" 
+    	android:layout_height="fill_parent" 
+    	android:text="@string/tw_status_s_finder" 
+    	android:drawableLeft="@drawable/tw_quick_panel_quick_sfinder_button_image" 
+    	android:drawablePadding="4.0dip" 
+    	android:layout_weight="1.0" />
+    <View 
+    	android:background="#80fafafa" 
+    	android:layout_width="1.0dip" 
+    	android:layout_height="24.0dip" />
+    <com.android.systemui.TwCenterTextView 
+    	android:textSize="@dimen/tw_quick_connect_sfinder_size" 
+    	android:textColor="@android:color/white" 
+    	android:gravity="center" 
+    	android:id="@+id/tw_quick_connect_view" 
+    	android:background="?android:selectableItemBackground" 
+    	android:layout_width="0.0dip" 
+    	android:layout_height="fill_parent" 
+    	android:text="@string/tw_status_quick_connect" 
+    	android:drawableLeft="@drawable/tw_quick_panel_quick_qconnect_button_image" 
+    	android:drawablePadding="4.0dip" 
+    	android:layout_weight="1.0" />
+</LinearLayout>

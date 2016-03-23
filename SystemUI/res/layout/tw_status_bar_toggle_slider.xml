@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.settings.ToggleSeekBar 
+         android:layout_gravity="center_vertical" 
+         android:id="@+id/slider" 
+         android:paddingTop="16.0dip" 
+         android:paddingBottom="16.0dip" 
+
+         android:layout_height="wrap_content" 
+         android:layout_width="@dimen/tw_status_bar_brightness_slide_min_width" 
+ 
+         android:contentDescription="@string/accessibility_brightness" 
+         android:paddingStart="16.0dip" 
+         android:paddingEnd="16.0dip" 
+         android:splitTrack="false" />
+    <LinearLayout 
+        android:gravity="center" 
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical" 
+        android:orientation="vertical" 
+        android:id="@+id/toggle_content" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">
+        <CheckBox 
+          android:id="@+id/toggle" 
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content" 
+          android:scaleX="0.8" 
+          android:scaleY="0.8" />
+        <TextView 
+          android:textSize="13.0sp" 
+          android:textColor="@android:color/white" 
+          android:gravity="center" 
+          android:id="@+id/label" 
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content" 
+          android:text="@string/status_bar_settings_auto_brightness_label" />
+    </LinearLayout>
+</merge>
